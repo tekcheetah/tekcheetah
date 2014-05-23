@@ -50,6 +50,10 @@ namespace Tekcheetah.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "First name")]
+        public string FirstName { get; set; }
+        
+        [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
 
