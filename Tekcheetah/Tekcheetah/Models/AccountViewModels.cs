@@ -31,9 +31,13 @@ namespace Tekcheetah.Models
     public class LoginViewModel
     {
         [Required]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
+        [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
-
+      
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
